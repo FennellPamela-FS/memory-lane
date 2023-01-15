@@ -1,7 +1,14 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css';
+import { getPosts } from '../lib/posts';
 
-export default function Home() {
+export async function getStaticProps() {
+  const posts = await getPosts();
+  return { props: { posts } };
+}
+
+
+export default function Home({ posts }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -46,6 +53,17 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
+        </div>
+        <div>
+          <ul>
+            {posts.map((post) => (
+              <li key={post.uuid}>
+                {/* <Link href={`/${post.slug}`}> */}
+                <a href={`/${post.slug}`}>{post.title}</a>
+                {/* </Link> */}
+              </li>
+            ))}
+          </ul>
         </div>
       </main>
 
