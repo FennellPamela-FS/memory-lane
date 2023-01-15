@@ -1,29 +1,22 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css';
-import { getPosts } from '../lib/posts';
 import Link from 'next/link';
-
-export async function getStaticProps() {
-  const posts = await getPosts();
-  return { props: { posts } };
-}
-
 
 export default function Home({ posts }) {
   return (
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <main>
         <h1 className={styles.title}>
-          Memory Lane <a href="https://nextjs.org">Next.js!</a>
+          Memory <span>Lane</span>
         </h1>
 
         <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
+          The <code>PamIam</code> blog for deploying static websites
         </p>
 
         <div className={styles.grid}>
@@ -55,17 +48,6 @@ export default function Home({ posts }) {
             </p>
           </a>
         </div>
-        <div>
-          <ul>
-            {posts.map((post) => (
-              <li key={post.uuid}>
-                <Link href={`/${post.slug}`}>
-                  {post.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
       </main>
 
       <footer>
@@ -75,7 +57,7 @@ export default function Home({ posts }) {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
+          <img src="/pamLogo-pro.png" alt="PamIam" className={styles.logo} /> &nbsp; PamIAM
         </a>
       </footer>
 
