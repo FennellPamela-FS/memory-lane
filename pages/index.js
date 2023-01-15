@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css';
 import { getPosts } from '../lib/posts';
+import Link from 'next/link';
 
 export async function getStaticProps() {
   const posts = await getPosts();
@@ -58,9 +59,9 @@ export default function Home({ posts }) {
           <ul>
             {posts.map((post) => (
               <li key={post.uuid}>
-                {/* <Link href={`/${post.slug}`}> */}
-                <a href={`/${post.slug}`}>{post.title}</a>
-                {/* </Link> */}
+                <Link href={`/${post.slug}`}>
+                  {post.title}
+                </Link>
               </li>
             ))}
           </ul>
