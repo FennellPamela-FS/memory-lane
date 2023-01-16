@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const myBlog = [
     {
@@ -63,7 +64,7 @@ function Blog() {
                             <p className="topPosts hidden sm:block md:block lg:block">{post.description}</p>
 
                             <div className="flex items-center gap-4 p-4">
-                                <img src={post.imgSrc} alt={post.imgAlt} className="w-12 h-12 rounded-full" />
+                                <Image src={post.imgSrc} alt={post.imgAlt} className="w-12 h-12 rounded-full" />
                                 <div className="flex flex-col">
                                     <h3 className="text-slate-900 font-bold">{post.name}</h3>
                                     <p className="text-slate-500 text-sm font-medium dark:text-slate-400"><time className="pr-2">{post.blogDate}</time><span className="sr-only">{post.readTimeA11y}</span>{post.readTime}</p>
