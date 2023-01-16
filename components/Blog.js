@@ -1,12 +1,13 @@
-import React from 'react';
+import Image from 'next/image';
 
 const myBlog = [
     {
         tag: 'Operations',
         title: 'Data Driven Product Maps',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum, autem cum molestiae nulla atque, ad facere laboriosam illum labore, fuga in? Corrupti eos veniam dolorum aspernatur labore earum vero.',
-        imgSrc: 'https://randomuser.me/api/portraits/women/27.jpg',
+        imgSrc: '/women-27.jpg',
         imgAlt: 'Photo of Samantha Taylor',
+        initials: 'ST',
         name: 'Samantha Taylor',
         blogDate: 'March 16, 2022',
         postA11y: '2022-03-16 19:00',
@@ -19,8 +20,9 @@ const myBlog = [
         tag: 'DevOps',
         title: 'Define Changlog Syntax',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quas praesentium quos voluptates assumenda corrupti adipisci suscipit nulla, est porro odio! Quibusdam quas, corrupti quisquam blanditiis necessitatibus nostrum tenetur dolor.',
-        imgSrc: 'https://randomuser.me/api/portraits/men/83.jpg',
+        imgSrc: '/men-83.jpg',
         imgAlt: 'Photo of Fred Jensen',
+        initials: 'FJ',
         name: 'Fred Jensen',
         blogDate: 'March 20, 2022',
         postA11y: '2022-03-20 19:00',
@@ -33,8 +35,9 @@ const myBlog = [
         tag: 'Tech',
         title: 'The CIA Triad',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam excepturi, et in ea dolorum laudantium sit ducimus ipsa consequuntur similique eius fugit dignissimos tempore vel explicabo. Sit deserunt quis cupiditate!',
-        imgSrc: 'https://randomuser.me/api/portraits/men/46.jpg',
+        imgSrc: '/men-46.jpg',
         imgAlt: 'Photo of Pat Jenkins',
+        initials: 'PJ',
         name: 'Pat Jenkins',
         blogDate: 'March 3, 2022',
         postA11y: '2022-03-03 19:00',
@@ -63,7 +66,8 @@ function Blog() {
                             <p className="topPosts text-black hidden sm:block md:block lg:block">{post.description}</p>
 
                             <div className="flex items-center gap-4 p-4">
-                                <img src={post.imgSrc} alt={post.imgAlt} className="w-12 h-12 rounded-full" />
+                                {/* <Image src={post.imgSrc} alt={post.imgAlt} width={50} height={50} className="w-12 h-12 rounded-full" /> */}
+                                <div className="flex w-8 h-8 rounded-full bg-blue-500 items-center">{post.initials}</div>
                                 <div className="flex flex-col">
                                     <h3 className="text-slate-900 font-bold">{post.name}</h3>
                                     <p className="text-slate-500 text-sm font-medium dark:text-slate-400"><time className="pr-2">{post.blogDate}</time><span className="sr-only">{post.readTimeA11y}</span>{post.readTime}</p>
