@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 const myBlog = [
     {
@@ -61,10 +60,10 @@ function Blog() {
                                 <button className={post.bgColor}>{post.tag}</button>
                                 <h2 className="text-lg text-black font-semibold tracking-tight"><a href="posts.html" className="hover:text-green-800">{post.title}</a></h2>
                             </div>
-                            <p className="topPosts hidden sm:block md:block lg:block">{post.description}</p>
+                            <p className="topPosts text-black hidden sm:block md:block lg:block">{post.description}</p>
 
                             <div className="flex items-center gap-4 p-4">
-                                <Image src={post.imgSrc} alt={post.imgAlt} className="w-12 h-12 rounded-full" />
+                                <img src={post.imgSrc} alt={post.imgAlt} className="w-12 h-12 rounded-full" />
                                 <div className="flex flex-col">
                                     <h3 className="text-slate-900 font-bold">{post.name}</h3>
                                     <p className="text-slate-500 text-sm font-medium dark:text-slate-400"><time className="pr-2">{post.blogDate}</time><span className="sr-only">{post.readTimeA11y}</span>{post.readTime}</p>

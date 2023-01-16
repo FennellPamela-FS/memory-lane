@@ -17,10 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
-
       <main className={styles.main}>
-
 
         <div className={styles.center}>
           <h1 className="text-3xl tracking-wide uppercase font-bold text-violet-900 underline">
