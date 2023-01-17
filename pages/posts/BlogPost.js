@@ -15,7 +15,7 @@ const BlogPost = () => {
                 <div class="p-8 flex flex-col gap-4 sm:flex-col md:flex-row">
                     {/* <!--Post Page BlogPost Image --> */}
                     <div class="drop-shadow-md max-w-fit">
-                        <Image class="rounded-lg h-auto" src="/images/photo-react-dom.avif" width={650} height={430} alt="Money on a wooden plate" />
+                        <Image class="rounded-lg h-auto" src="/images/photo-react-dom.png" width={650} height={430} alt="Money on a wooden plate" />
                     </div>
 
                     {/* <!-- Post BlogPost --> */}
