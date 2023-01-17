@@ -1,9 +1,10 @@
+import Link from 'next/link';
 
 const myBlog = [
     {
-        tag: 'Operations',
-        title: 'Data Driven Product Maps',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum, autem cum molestiae nulla atque, ad facere laboriosam illum labore, fuga in? Corrupti eos veniam dolorum aspernatur labore earum vero.',
+        tag: 'Critical Thinking',
+        title: 'Learning to Experience the Problem',
+        description: 'Practicing Problem-Solving with the intent to experience the problem so that you can learn something new. If we don’t experience the problem while we are trying to solve it, we may forfeit our opportunity to learn from the experience. ',
         imgSrc: '/women-27.jpg',
         imgAlt: 'Photo of Samantha Taylor',
         initials: 'ST',
@@ -12,7 +13,7 @@ const myBlog = [
         postA11y: '2022-03-16 19:00',
         readTime: '6 min',
         readTimeA11y: '6 minute read',
-        buttonName: 'Read',
+        buttonName: 'Read Post',
         bgColor: 'w-fit text-center lg:block flex-none text-blue-600 text-xs tracking-wide font-semibold px-2 py-1 mb-2 rounded-md bg-blue-100',
     },
     {
@@ -27,11 +28,11 @@ const myBlog = [
         postA11y: '2022-03-20 19:00',
         readTime: '11 min',
         readTimeA11y: '11 minute read',
-        buttonName: 'Read',
+        buttonName: 'Read Post',
         bgColor: 'w-fit text-center lg:block flex-none text-blue-600 text-xs tracking-wide font-semibold px-2 py-1 mb-2 rounded-md bg-green-100',
     },
     {
-        tag: 'Tech',
+        tag: 'Security',
         title: 'The CIA Triad',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam excepturi, et in ea dolorum laudantium sit ducimus ipsa consequuntur similique eius fugit dignissimos tempore vel explicabo. Sit deserunt quis cupiditate!',
         imgSrc: '/men-46.jpg',
@@ -42,7 +43,7 @@ const myBlog = [
         postA11y: '2022-03-03 19:00',
         readTime: '8 min',
         readTimeA11y: '8 minute read',
-        buttonName: 'Read',
+        buttonName: 'Read Post',
         bgColor: 'w-fit text-center lg:block flex-none text-blue-600 text-xs tracking-wide font-semibold px-2 py-1 mb-2 rounded-md bg-red-100',
     },
 ]
@@ -60,9 +61,9 @@ function Blog() {
                         <div key={post.name} className="bg-white drop-shadow-md p-4 h-auto rounded flex-initial md:w-full lg:w-3/4">
                             <div>
                                 <button className={post.bgColor}>{post.tag}</button>
-                                <h2 className="text-lg text-black font-semibold tracking-tight"><a href="posts.html" className="hover:text-green-800">{post.title}</a></h2>
+                                <h2 className="text-lg font-semibold tracking-tight dark:text-black"><a href="posts.html" className="hover:text-green-800">{post.title}</a></h2>
                             </div>
-                            <p className="topPosts text-black hidden sm:block md:block lg:block">{post.description}</p>
+                            <p className="topPosts hidden sm:block md:block lg:block dark:text-black">{post.description}</p>
 
                             <div className="flex items-center gap-4 p-4">
                                 {/* <Image src={post.imgSrc} alt={post.imgAlt} width={50} height={50} className="w-12 h-12 rounded-full" /> */}
@@ -73,7 +74,7 @@ function Blog() {
                                 </div>
                             </div>
                             <button className="px-4 py-1 text-sm hover:text-slate-600 font-semibold rounded-full border border-slate-200 text-white bg-slate-600 hover:bg-white focus:outline-none focus:ring-2 focus:ring-slate-600 focus:ring-offset-2">
-                                <a href="posts.html">{post.buttonName}</a>
+                                <Link href="/posts/BlogPost">{post.buttonName}</Link>
                             </button>
                         </div>
                     ))}
