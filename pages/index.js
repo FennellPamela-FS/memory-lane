@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Blog from '@/Components/Blog'
 import styles from '../styles/Home.module.css'
 import { Inter } from '@next/font/google'
-import Blog from '@/Components/Blog'
 
 // import styles from '@/styles/Home.module.css'
+// import Blog from '@/components/blog'
 
 const inter = Inter({ subsets: ['latin'] })
 
