@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 const BlogPost2 = () => {
     return (
@@ -9,16 +10,9 @@ const BlogPost2 = () => {
                 </h1>
                 <div class="p-8 flex flex-col gap-4 sm:flex-col md:flex-row">
                     {/* <!--Post Page BlogPost2 Image --> */}
-                    <div class="drop-shadow-md w-1/2">
-                        <div class="w-fit bg-white flex flex-col md:flex-row items-center gap-4 mt-8 mr-8 p-4 border-2 border-solid border-gray-200 rounded-lg h-auto">
-                            <div class="flex flex-col">
-                                <h1 className="text-2xl font-semibold px-8 text-slate-500 text-sm font-medium dark:text-slate-400">
-                                    The Flight Widget: This was a one-way flight through 3 builds or should I say terminals. Maybe I should just stick with projects for this one.
-                                </h1>
-                            </div>
-                        </div>
+                    <div class="drop-shadow-md max-w-fit">
+                        <Image class="rounded-lg h-auto" src="/images/photo-flight.avif" width={650} height={430} alt="Money on a wooden plate" />
                     </div>
-
                     {/* <!-- Post BlogPost2 --> */}
                     <div class="p-4 h-auto rounded w-auto md:max-w-fit">
                         <div>
@@ -26,6 +20,16 @@ const BlogPost2 = () => {
 
                             <p class="text-slate-500 text-sm font-medium dark:text-slate-400"><time class="pr-2">Jan 16, 2023</time></p>
                         </div>
+                        <div class="drop-shadow-md w-1/2">
+                            <div class="w-fit bg-white flex flex-col md:flex-row items-center gap-4 mt-8 mr-8 p-4 border-2 border-solid border-gray-200 rounded-lg h-auto">
+                                <div class="flex flex-col">
+                                    <h1 className="text-2xl font-semibold px-8 text-slate-500 text-sm font-medium dark:text-slate-400">
+                                        The Flight Widget: This was a one-way flight through 3 builds or should I say terminals. Maybe I should just stick with projects for this one.
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
 

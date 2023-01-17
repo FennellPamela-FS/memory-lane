@@ -1,13 +1,9 @@
-import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
+import Link from "next/link"
+import Image from "next/image"
 
 const BlogPost = () => {
     return (
         <div>
-            <Head>
-                <title>Learning to Experience the Problem</title>
-            </Head>
             <section class="mx-20">
                 <h1 class="mt-10 text-xl">
                     {'←'} <Link href="/" className="underline"> Back to home</Link>
@@ -15,13 +11,13 @@ const BlogPost = () => {
                 <div class="p-8 flex flex-col gap-4 sm:flex-col md:flex-row">
                     {/* <!--Post Page BlogPost Image --> */}
                     <div class="drop-shadow-md max-w-fit">
-                        <Image class="rounded-lg h-auto" src="/images/photo-react-dom.avif" width={650} height={430} alt="Money on a wooden plate" />
+                        <Image class="rounded-lg h-auto" src="/images/photo-triad.avif" width={650} height={430} alt="Money on a wooden plate" />
                     </div>
 
                     {/* <!-- Post BlogPost --> */}
                     <div class="p-4 h-auto rounded w-auto md:max-w-fit">
                         <div>
-                            <h1 class="text-3xl font-bold text-gray-900 dark: text-gray-200">Learning to Experience the Problem</h1>
+                            <h1 class="text-3xl font-bold text-gray-900 dark: text-gray-200">The CIA Triad</h1>
 
                             <p class="text-slate-500 text-sm font-medium dark:text-slate-400"><time class="pr-2" datetime="2022-05-16 19:00">March 7, 2022</time></p>
                         </div>
