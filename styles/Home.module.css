@@ -286,12 +286,13 @@
 
 @media (prefers-color-scheme: dark) {
   .pamLogo {
-    /* filter: invert(1); */
+    filter: invert(1);
   }
 
   .logo,
   .thirteen img {
     /* filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70); */
+    filter: drop-shadow(0 0 0.3rem #ffffff70);
   }
 }
 
