@@ -35,9 +35,9 @@ const myBlog = [
         bgColor: 'w-fit text-center lg:block flex-none text-blue-600 text-xs tracking-wide font-semibold px-2 py-1 mb-2 rounded-md bg-green-100',
     },
     {
-        tag: 'Security',
-        title: 'The CIA Triad',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam excepturi, et in ea dolorum laudantium sit ducimus ipsa consequuntur similique eius fugit dignissimos tempore vel explicabo. Sit deserunt quis cupiditate!',
+        tag: 'FrontEnd',
+        title: 'React Native: Who, What, and Why Expo … Go?',
+        description: 'If you want to build apps without actually using Xcode and Android Studio, but you need the capabilities of Xcode and Android Studio to do so, then you want to use Expo.',
         imgSrc: '/images/men-46.jpg',
         imgAlt: 'Photo of Pat Jenkins',
         initials: 'PJ',
