@@ -8,7 +8,7 @@ const BlogPost = () => {
             <Head>
                 <title>Learning to Experience the Problem</title>
             </Head>
-            <section class="mx-20">
+            <section class="mx-auto max-w-6xl py-3 sm:py-48 lg:py-20">
                 <h1 class="mt-10 text-xl">
                     {'←'} <Link href="/" className="underline"> Back to home</Link>
                 </h1>
@@ -25,8 +25,8 @@ const BlogPost = () => {
 
                             <p class="text-slate-500 text-sm font-medium dark:text-slate-400"><time class="pr-2" datetime="2022-05-16 19:00">March 7, 2022</time></p>
                         </div>
-                        <div class="drop-shadow-md w-1/2">
-                            <div class="w-fit bg-white flex flex-col md:flex-row items-center gap-4 mt-8 mr-8 p-4 border-2 border-solid border-gray-200 rounded-lg h-auto">
+                        <div class="drop-shadow-md">
+                            <div class="w-fit bg-white flex flex-col md:flex-row items-center gap-4 mt-8 p-4 border-2 border-solid border-gray-200 rounded-lg h-auto">
                                 <div class="flex flex-col">
                                     <h1 className="text-2xl font-semibold px-8 text-slate-500 text-sm font-medium dark:text-slate-400">
                                         Practicing Problem-Solving with the intent to experience the problem so that you can learn something new.
