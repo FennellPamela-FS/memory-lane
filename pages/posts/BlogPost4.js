@@ -54,7 +54,7 @@ const BlogPost = () => {
                     I will conclude by saying that the MVC Architecture itself is made up of routes connected to a model that accesses data to bring into view utilizing CRUD which is to create, read, update, and delete. Create adds data to the model by such as adding new record in a database. When that data is accessed and brought into view, it can name be read.
                 </p>
                 <p class="px-8 py-3">
-                    That whole scene embodies what Cutrell is trying to imply. If we don’t experience the problem while we are trying to solve it, we may forfeit our opportunity to learn from the experience. Thus putting us in the situation to have to look it up again because we applied someone else knowledge to the problem without retaining the solution.
+                    That whole scene embodies what Cutrell is trying to imply. If we don&apos;t experience the problem while we are trying to solve it, we may forfeit our opportunity to learn from the experience. Thus putting us in the situation to have to look it up again because we applied someone else knowledge to the problem without retaining the solution.
 
                 </p>
                 <h1 className="text-2xl font-semibold px-8">
@@ -67,7 +67,7 @@ const BlogPost = () => {
                     <span className="font-bold">DELETE:</span> delete - access the model via the controller to remove or delete the data
                 </p>
                 <p class="px-8 py-3">
-                    Basically, I can see all this CRUD in my View!! Personally I like to call it the crud controller relationship {`(i’m just saying …)`} If I had to explain the MVC architecture in laymen's terms, then the crud controller relationship would be my approach.
+                    Basically, I can see all this CRUD in my View!! Personally I like to call it the crud controller relationship {`(i&apos;m just saying …)`} If I had to explain the MVC architecture in laymen&apos;s terms, then the crud controller relationship would be my approach.
                 </p>
             </section>
             {/* <!-- end Top Post section  --> */}
