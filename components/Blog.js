@@ -64,7 +64,7 @@ const myBlog = [
         readTimeA11y: '3 minute read',
         buttonName: 'Read Post',
         btnLink: '/posts/BlogPost4',
-        bgColor: 'w-fit text-center lg:block flex-none text-blue-600 text-xs tracking-wide font-semibold px-2 py-1 mb-2 rounded-md bg-red-100',
+        bgColor: 'w-fit text-center lg:block flex-none text-blue-600 text-xs tracking-wide font-semibold px-2 py-1 mb-2 rounded-md bg-purple-100',
     },
 ]
 
