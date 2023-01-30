@@ -50,6 +50,22 @@ const myBlog = [
         btnLink: '/posts/BlogPost3',
         bgColor: 'w-fit text-center lg:block flex-none text-blue-600 text-xs tracking-wide font-semibold px-2 py-1 mb-2 rounded-md bg-red-100',
     },
+    {
+        tag: 'Software Design',
+        title: 'M-V-C ???',
+        description: 'Model-View-Controller (MVC) is three interacting parts used for developing user interfaces. Model interacts with the Controller to bring the data of the model into View.',
+        imgSrc: '/images/photo-woman.png',
+        imgAlt: 'Photo of Pam I Am Logo',
+        initials: 'PB',
+        name: 'Pamela Bynum',
+        blogDate: 'January 29, 2023',
+        postA11y: '2022-01-29 05:00',
+        readTime: '3 min',
+        readTimeA11y: '3 minute read',
+        buttonName: 'Read Post',
+        btnLink: '/posts/BlogPost4',
+        bgColor: 'w-fit text-center lg:block flex-none text-blue-600 text-xs tracking-wide font-semibold px-2 py-1 mb-2 rounded-md bg-red-100',
+    },
 ]
 
 function Blog() {

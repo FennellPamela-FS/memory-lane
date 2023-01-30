@@ -47,7 +47,7 @@ export default function Home() {
             <code className={styles.code}>Memory Lane</code>
           </p>
           <p>
-            2.6 Assignment: &nbsp;
+            2.6, 3.6, 4.9  Assignments: &nbsp;
             <code className={styles.code}>Updating Your Static Website</code>
           </p>
           <div>
